@@ -90,6 +90,13 @@ footer .info-footer {
   box-shadow: 1px 8px 10px 1px grey;
 }
 
+@media only screen and (min-width: 768px) {
+  .info h3 {
+    font-size: 40px;
+    text-align: center;
+    width: 70%;
+  }
+}
 .btn {
   border-radius: 21px;
   padding: 10px 26px;
