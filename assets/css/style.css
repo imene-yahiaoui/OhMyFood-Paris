@@ -1,1 +1,54 @@
-/*# sourceMappingURL=style.css.map */
+/*header*/
+.header {
+  margin-top: -22px;
+  height: 68px;
+}
+.header .titreHeader {
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+/*footer*/
+footer {
+  background-color: #353535;
+  color: #ffffff;
+  margin-top: -44px;
+  padding-bottom: 38px;
+  padding-left: 20px;
+}
+footer .footer_titre {
+  color: #ffffff;
+  font-family: Shrikhand;
+  font-size: 18px;
+  padding-top: 25px;
+  line-height: 26px;
+  margin-bottom: 17px;
+  font-weight: 400;
+}
+footer a {
+  color: #ffffff;
+}
+footer .mail {
+  margin-top: -20px;
+}
+footer .icon-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  margin-bottom: -25px;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .icon-footer i {
+  font-size: 11px;
+}
+footer .info-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}/*# sourceMappingURL=style.css.map */
