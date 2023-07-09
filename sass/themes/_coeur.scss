@@ -1,0 +1,104 @@
+.coeur_a,
+.coeur {
+  font-size: 23px;
+  position: absolute;
+  right: 57px;
+  color: $color-grisFoncer;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.coeur_color_a,
+.coeur_color {
+  font-size: 23px;
+  position: absolute;
+  right: 57px;
+  overflow: hidden;
+  background-image: linear-gradient(218deg, $color-primaire, $color-Secondaire);
+  transition: 700ms ease-out;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  opacity: 0;
+
+  &:hover {
+    opacity: 1;
+    background-image: linear-gradient(
+      218deg,
+      $color-primaire,
+      $color-Secondaire
+    );
+    transition: 700ms ease-in;
+  }
+}
+
+@import "../utils/mixin";
+
+@include pour_tablet_seul {
+  .coeur_color {
+    position: absolute;
+    right: 62px;
+  }
+
+  .coeur {
+    right: 62px;
+    color: #423f3f;
+
+    position: absolute;
+  }
+
+  .coeur_a {
+    position: relative;
+    right: 14px;
+    top: 9px;
+  }
+  .coeur_color_a {
+    position: relative;
+    right: 41px;
+    top: 9px;
+  }
+}
+
+@include pour_PC {
+  .coeur {
+    position: relative;
+    right: -24%;
+    top: 10px;
+    font-size: 23px;
+  }
+  .coeur_color {
+    position: relative;
+    right: 15px;
+    top: 10px;
+    font-size: 23px;
+  }
+
+  .coeur_a {
+    position: relative;
+    right: -22%;
+    top: 11px;
+  }
+  .coeur_color_a {
+    position: relative;
+    right: 16px;
+    top: 11px;
+  }
+}
+@include pc_smal {
+  .coeur_color {
+    position: relative;
+    right: -11px;
+    top: -17px;
+  }
+
+  .coeur_color_a {
+    position: relative;
+    right: -11px;
+    top: -16px;
+  }
+}

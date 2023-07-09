@@ -104,8 +104,8 @@
     padding-right: 90px;
   }
   .resto {
-    justify-content: center;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .resto .plats .photos img {
