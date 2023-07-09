@@ -1,0 +1,27 @@
+.commande {
+  display: flex;
+  justify-content: center;
+}
+.btn_commande {
+  width: 184px;
+  color: white;
+  height: 56px;
+  border-radius: 30px;
+  background-image: linear-gradient(351deg, $color-primaire, $color-Secondaire);
+  @extend %btn;
+  display: flex;
+  justify-content: center;
+  transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  /*animation  btn */
+  &:hover {
+    transition: 0.7s ease-in;
+    opacity: 0.5;
+    background-image: linear-gradient(
+      351deg,
+      $color-primaire,
+      $color-Secondaire
+    );
+    box-shadow: 1px 8px 10px 1px grey;
+  }
+}
