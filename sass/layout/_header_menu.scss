@@ -24,4 +24,16 @@
   top: 20px;
 }
 
- 
+@import "../utils/mixin";
+
+@include pour_tablet {
+  .fa-arrow-left {
+    left: 64px;
+  }
+}
+
+@include pour_PC {
+  .fa-arrow-left {
+    left: 76px;
+  }
+}
