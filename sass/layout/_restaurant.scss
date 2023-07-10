@@ -3,10 +3,14 @@
   padding-bottom: 62px;
 
   h3 {
+    // font-family: 'Shrikhand';
     font-size: 24px;
     padding-left: 20px;
     margin-bottom: 6px;
     padding-top: 45px;
+  
+   
+ 
   }
 }
 .resto {
@@ -104,15 +108,18 @@
 
     padding-right: 90px;
   }
-  .resto {
-    justify-content: center;
-    flex-direction: row;
-  }
+  // .resto {
+  //   justify-content: center;
+  //   flex-direction: row;
+  // }
 
   .resto .plats .photos img {
     object-fit: cover;
   }
-
+  .resto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .resto .plats .photos .nouveaub,
   .resto .plats .photos .nouveaua {
     position: relative;

@@ -32,7 +32,7 @@ footer {
 }
 footer .footer_titre {
   color: #ffffff;
-  font-family: Shrikhand;
+  font-family: "Shrikhand";
   font-size: 18px;
   padding-top: 25px;
   line-height: 26px;
@@ -101,15 +101,29 @@ footer .info-footer {
 }
 @media only screen and (min-width: 993px) {
   footer {
-    padding-left: 155px;
     display: flex;
     flex-direction: row;
-    padding-left: 60px;
     margin-top: -5px;
     padding-top: 0px;
     padding-bottom: 0px;
     height: 106px;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-left: 102px;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    padding-right: 62px;
+    -moz-column-gap: 26px;
+         column-gap: 26px;
+  }
+  footer .footer_titre {
+    font-size: 25px;
+  }
+  .footer_space {
+    padding-right: 37px;
+  }
+  .info-footer {
+    padding-top: 24px;
   }
 }
 .localisation {
@@ -388,13 +402,13 @@ footer .info-footer {
     padding-left: 104px;
     padding-right: 90px;
   }
-  .resto {
-    justify-content: center;
-    flex-direction: row;
-  }
   .resto .plats .photos img {
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .resto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   .resto .plats .photos .nouveaub,
   .resto .plats .photos .nouveaua {
@@ -869,7 +883,7 @@ footer {
 }
 footer .footer_titre {
   color: #ffffff;
-  font-family: Shrikhand;
+  font-family: "Shrikhand";
   font-size: 18px;
   padding-top: 25px;
   line-height: 26px;
@@ -938,14 +952,28 @@ footer .info-footer {
 }
 @media only screen and (min-width: 993px) {
   footer {
-    padding-left: 155px;
     display: flex;
     flex-direction: row;
-    padding-left: 60px;
     margin-top: -5px;
     padding-top: 0px;
     padding-bottom: 0px;
     height: 106px;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-left: 102px;
+    font-size: 18px;
+    font-weight: 400;
+    list-style: none;
+    padding-right: 62px;
+    -moz-column-gap: 26px;
+         column-gap: 26px;
+  }
+  footer .footer_titre {
+    font-size: 25px;
+  }
+  .footer_space {
+    padding-right: 37px;
+  }
+  .info-footer {
+    padding-top: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
