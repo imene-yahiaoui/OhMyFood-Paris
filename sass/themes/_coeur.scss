@@ -7,7 +7,7 @@
   cursor: pointer;
   overflow: hidden;
 
-  &:hover {
+  &:hover{
     opacity: 0;
     display: none;
   }
@@ -90,15 +90,17 @@
   }
 }
 @include pc_smal {
+
   .coeur_color {
     position: relative;
     right: -11px;
     top: -17px;
-  }
-
+}
+  
   .coeur_color_a {
     position: relative;
-    right: -11px;
+       right: -11px;
     top: -16px;
   }
+
 }

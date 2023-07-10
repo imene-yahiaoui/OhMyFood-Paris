@@ -1,0 +1,229 @@
+.img_menu {
+  width: 100%;
+  height: 335px;
+  z-index: 0;
+  position: relative;
+  max-width: 100%;
+  display: block;
+   object-fit: cover;
+  width: 100%;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  width: 100%;
+  border-radius: 30px 30px 0px 0px;
+  margin-top: -45px;
+  position: relative;
+  z-index: 1;
+  padding: 15px 20px 52px 20px;
+  margin-bottom: 42px;
+}
+.titre_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    font-size: 24px;
+    font-family: "Shrikhand", cursive;
+  }
+}
+
+.btn_menu_check {
+
+ 
+
+  display: grid;
+  place-items: center;
+  color: $color-Tertiaire;
+  background-color: $color-Tertiaire;
+  width: 60px;
+  height: auto;
+  margin-right: -60px;
+  padding: 0;
+  border-radius: 0 14px 14px 0;
+  transition: margin-right 0.7s;
+  /*
+  width: 60px;
+  margin-right: -60px;
+  border-radius: 0px 20px 20px 0px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  transition: margin-right 0.7s;*/
+}
+
+.fa .fa-solid,
+.fa-check {
+  display: grid !important;
+  place-items: center;
+  background: white;
+  border-radius: 50%;
+  -webkit-text-stroke-width: 1px;
+  //aspect-ratio: 1/1;
+  width: 29px;
+  height: 29px;
+  color: $color-Tertiaire;
+  justify-items: center;
+}
+
+@keyframes chekAnim {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@import "../utils/animation";
+
+.btn_menu {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: 100ms * $i;
+    }
+  }
+  border-radius: 21px;
+  overflow: hidden;
+  box-shadow: 0px 8px 10px -5px grey;
+  background-color: white;
+  cursor: pointer;
+  height: 73px;
+  width: 100%;
+  display: flex;
+  transition: all 1s ease;
+  animation: effet .8s both;
+ 
+
+  span {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 900;
+    padding-bottom: 11px;
+   
+    align-content: flex-end;
+   margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .pharagraphe-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-wrap: nowrap;
+  }
+
+  p {
+    width: 85%;
+    padding: 16px;
+    padding-right:0px ;
+    margin: 0px;
+    white-space: nowrap;
+    font-size: 15px;
+    color: $color-grisFoncer;
+    font-weight: 100;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  b {
+    color: black;
+    white-space: nowrap;
+    display: block;
+    padding-bottom: 4px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &:hover {
+    .btn_menu_check {
+      transition: all 1s ease;
+      margin-right: 0px;
+    }
+    .fa-check {
+      animation-name: chekAnim;
+      animation-duration: 1s;
+    }
+  }
+}
+
+.plats {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding-bottom: 40px;
+}
+ 
+.titre_choix_menu {
+  width: 40px;
+  color: $color-grisFoncer;
+  padding-bottom: 10px;
+  border-bottom: 3px solid $color-Tertiaire;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+@media only screen and (max-width: 767px)  {
+  
+
+  .a {
+  margin-left: 41px;
+  
+}}
+
+.choix_menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding: 0px;
+}
+
+@import "../utils/mixin";
+
+@include pour_tablet {
+  .img_menu {
+    height: 400px;
+    object-fit: cover;
+  }
+  .menu {
+    width: 80%;
+    display: grid;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: -49px;
+    position: relative;
+  }
+
+  .titre_menu {
+    justify-content: center;
+  }
+
+  .plats {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@include portable_smal{
+  .titre_menu h3 {
+    font-size: 18px;
+}
+
+.btn_menu_check {
+
+  width: 80px;
+  margin-right: -80px;
+}
+.btn_menu   {
+P{
+  font-size: 13px;
+}
+b{
+  font-size: 16px;
+}
+
+}
+}
