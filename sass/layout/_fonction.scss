@@ -15,6 +15,7 @@
     // font-family: 'Shrikhand';
     font-size: 24px;
     margin-bottom: 5px;
+    font-weight: bold;
   }
 
   ol {
@@ -60,14 +61,19 @@
       }
     }
   }
+  .fonction_paragraphe{
+    font-weight: bold;
+  }
 }
 
 @include pour_tablet_seul {
-  .fonction {
-    padding-left: 10px;
-    padding-right: 10px;
+  .fonction  {
+    h2{    padding-left: 11%;}
+ 
 
     ol {
+      width: 80%;
+      margin: 0 auto;
       flex-direction: row;
 
       column-gap: 12px;
@@ -89,15 +95,15 @@
 
 @include pour_PC {
   .fonction {
-    padding-left: 104px;
-
-    padding-right: 90px;
+    
 
     h2 {
-      padding-left: 0px;
+      padding-left: 11%;
     }
 
     ol {
+      width: 80%;
+      margin: 0 auto;
       flex-direction: row;
       justify-content: center;
       column-gap: 42px;

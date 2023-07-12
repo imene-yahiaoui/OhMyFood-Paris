@@ -1,7 +1,5 @@
 /*footer*/
- 
- 
- 
+
 footer {
   background-color: #353535;
   color: #ffffff;
@@ -11,13 +9,12 @@ footer {
 
   .footer_titre {
     color: #ffffff;
-    font-family: 'Shrikhand';
+    font-family: "Shrikhand";
     font-size: 18px;
     padding-top: 25px;
     line-height: 26px;
     margin-bottom: 17px;
     font-weight: 400;
-     
   }
   a {
     color: #ffffff;
@@ -33,7 +30,7 @@ footer {
     column-gap: 10px;
     margin-bottom: -25px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: bold;
 
     i {
       font-size: 11px;
@@ -56,14 +53,14 @@ footer {
 
     margin-top: -5px;
     padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     height: 106px;
-    //   justify-content: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
+
     .footer_titre {
       order: 2;
       padding-left: 32px;
-      padding-top: 22px;
+      padding-top: 10px;
       font-size: 18px;
       font-weight: 400;
       list-style: none;
@@ -91,39 +88,31 @@ footer {
 
 @include pour_PC {
   footer {
-
-    .footer_titre{
-      font-size: 25px;
-    }
-    
     display: flex;
     flex-direction: row;
- 
+
     margin-top: -5px;
     padding-top: 0px;
-    padding-bottom: 0px;
-    
-    height: 106px;
-    justify-content:flex-end;
+    padding-bottom: 30px;
 
+    height: 106px;
+    justify-content: flex-end;
 
     padding-left: 102px;
-    // padding-top: 22px;
+    padding-top: 22px;
     font-size: 18px;
     font-weight: 400;
     list-style: none;
     padding-right: 62px;
     column-gap: 26px;
-  
-    
   }
-  .footer_space
-  {
+  .footer_space {
     padding-right: 37px;
   }
-  .info-footer{
-    padding-top: 24px;
-
+  .info-footer {
+    padding: 51px 25px 30px 25px;
   }
- 
+  .footer_titre {
+    padding-top: 20px;
+  }
 }

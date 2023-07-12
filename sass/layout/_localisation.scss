@@ -14,8 +14,12 @@
     background-color: #eaeaea;
     font-weight: 500;
     width: 134px;
-    .placeholder{
-      color: rgb(5, 5, 5);
-    }
+    // .placeholder{
+    //   color: rgb(5, 5, 5);
+    // }
+  }
+  .input::placeholder{
+    color: black;
+    font-weight: 900;
   }
 }

@@ -44,7 +44,8 @@
         height: 29px;
         align-items: center;
         padding: 10px;
-        color: #299077;
+        color: rgba(0, 135, 102, 1);
+        font-weight: bold;
         position: absolute;
         right: 10%;
         margin-top: -154px;
@@ -84,9 +85,14 @@
 @import "../utils/mixin";
 
 @include pour_tablet_seul {
+  .restaurant h3 {
+    padding-left: 11%;
+  }
   .resto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
   }
 
   .resto .plats .photos .nouveaub,
@@ -99,12 +105,9 @@
 }
 
 @include pour_PC {
-  .restaurant {
-    padding-left: 104px;
-
-    padding-right: 90px;
+  .restaurant h3 {
+    padding-left: 11%;
   }
-
 
   .resto .plats .photos img {
     object-fit: cover;
@@ -112,25 +115,25 @@
   .resto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
   }
   .resto .plats .photos .nouveaub,
   .resto .plats .photos .nouveaua {
     position: relative;
     top: -4px;
     width: 70px;
-   left: 75%;
+    left: 75%;
   }
 
   .paragraphe {
     width: 72%;
   }
 }
-@include pour_PC_grand-ecran{
-
+@include pour_PC_grand-ecran {
   .resto .plats .photos .nouveaub,
   .resto .plats .photos .nouveaua {
-   
-   left: 80%;
+    left: 83%;
   }
 }
 @include pc_smal {
