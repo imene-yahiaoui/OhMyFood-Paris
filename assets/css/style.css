@@ -180,7 +180,7 @@ footer .info-footer {
 .btn {
   color: white;
   font-weight: 900;
-  height: 56px;
+  height: 45px;
   border-radius: 30px;
   background-image: linear-gradient(351deg, #9356dc, #ff79da);
   text-align: center;
@@ -392,10 +392,11 @@ footer .info-footer {
 .info-plats .paragraphe h6 {
   font-size: 18px;
   margin-bottom: -10px;
+  font-weight: bold;
 }
 .info-plats .paragraphe p {
   font-size: 17px;
-  color: grey;
+  color: rgb(0, 0, 0);
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -501,7 +502,7 @@ footer .info-footer {
     right: 62px;
   }
   .coeur {
-    right: 62px;
+    right: 15%;
     color: #423f3f;
     position: absolute;
   }
@@ -642,14 +643,6 @@ body {
   padding: 0;
   border-radius: 0 14px 14px 0;
   transition: margin-right 0.7s;
-  /*
-  width: 60px;
-  margin-right: -60px;
-  border-radius: 0px 20px 20px 0px;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  transition: margin-right 0.7s;*/
 }
 
 .fa .fa-solid,
@@ -732,7 +725,7 @@ body {
   margin: 0px;
   white-space: nowrap;
   font-size: 15px;
-  color: #423f3f;
+  color: rgb(0, 0, 0);
   font-weight: 100;
   overflow: hidden;
   text-overflow: ellipsis;

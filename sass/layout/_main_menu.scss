@@ -44,14 +44,7 @@
   padding: 0;
   border-radius: 0 14px 14px 0;
   transition: margin-right 0.7s;
-  /*
-  width: 60px;
-  margin-right: -60px;
-  border-radius: 0px 20px 20px 0px;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  transition: margin-right 0.7s;*/
+  
 }
 
 .fa .fa-solid,
@@ -124,7 +117,7 @@
     margin: 0px;
     white-space: nowrap;
     font-size: 15px;
-    color: $color-grisFoncer;
+    color: rgba(0, 0, 0, 1);
     font-weight: 100;
     overflow: hidden;
     text-overflow: ellipsis;
