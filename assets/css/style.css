@@ -7,6 +7,7 @@
 
 body {
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 /*header*/
@@ -415,10 +416,16 @@ footer .info-footer {
     position: relative;
     top: -4px;
     width: 70px;
-    left: 65%;
+    left: 75%;
   }
   .paragraphe {
     width: 72%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .resto .plats .photos .nouveaub,
+  .resto .plats .photos .nouveaua {
+    left: 80%;
   }
 }
 @media only screen and (min-width: 993px) and (max-width: 1110px) {
@@ -426,7 +433,8 @@ footer .info-footer {
     -moz-column-gap: 27px;
          column-gap: 27px;
   }
-  .resto .plats .photos .nouveaub, .resto .plats .photos .nouveaua {
+  .resto .plats .photos .nouveaub,
+  .resto .plats .photos .nouveaua {
     margin-bottom: 121px;
   }
   .info-plats .paragraphe {
@@ -534,6 +542,7 @@ footer .info-footer {
 
 body {
   margin: 0 auto;
+  max-width: 1400px;
 }
 
 .menu-header {
