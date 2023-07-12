@@ -598,6 +598,15 @@ body {
     left: 76px;
   }
 }
+@media only screen and (max-width: 400px) {
+  .fa-arrow-left {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 17px;
+    top: 26px;
+  }
+}
 .img_menu {
   width: 100%;
   height: 335px;
@@ -793,7 +802,7 @@ body {
     margin: auto;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .titre_menu h3 {
     font-size: 18px;
   }
@@ -852,7 +861,7 @@ body {
     top: -1px;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 400px) {
   .coeur_menu {
     font-size: 27px;
     right: 29px;

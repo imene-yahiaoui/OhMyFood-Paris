@@ -37,3 +37,13 @@
     left: 76px;
   }
 }
+
+@include portable_smal {
+  .fa-arrow-left {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    left: 17px;
+    top: 26px;
+  }
+}
