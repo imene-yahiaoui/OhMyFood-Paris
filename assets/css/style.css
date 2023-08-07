@@ -148,7 +148,7 @@ footer {
   background-color: #353535;
   color: #ffffff;
   margin-top: -44px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-left: 20px;
 }
 footer .footer_titre {
@@ -620,7 +620,7 @@ footer .info-footer {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .coeur_color {
     position: absolute;
-    right: 62px;
+    right: 15%;
   }
   .coeur {
     right: 15%;
@@ -665,13 +665,12 @@ footer .info-footer {
 @media only screen and (min-width: 993px) and (max-width: 1110px) {
   .coeur_color {
     position: relative;
-    right: -11px;
-    top: -17px;
+    right: 29%;
   }
   .coeur_color_a {
     position: relative;
-    right: -11px;
-    top: -16px;
+    right: 16px;
+    top: 11px;
   }
 }
 * {
@@ -819,16 +818,16 @@ body {
   animation: effet 0.8s both;
 }
 .btn_menu:nth-child(1) {
-  animation-delay: 100ms;
+  animation-delay: 500ms;
 }
 .btn_menu:nth-child(2) {
-  animation-delay: 200ms;
+  animation-delay: 1000ms;
 }
 .btn_menu:nth-child(3) {
-  animation-delay: 300ms;
+  animation-delay: 1500ms;
 }
 .btn_menu:nth-child(4) {
-  animation-delay: 400ms;
+  animation-delay: 2000ms;
 }
 .btn_menu span {
   display: flex;
@@ -1023,7 +1022,7 @@ footer {
   background-color: #353535;
   color: #ffffff;
   margin-top: -44px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   padding-left: 20px;
 }
 footer .footer_titre {

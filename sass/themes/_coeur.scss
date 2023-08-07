@@ -7,7 +7,7 @@
   cursor: pointer;
   overflow: hidden;
 
-  &:hover{
+  &:hover {
     opacity: 0;
     display: none;
   }
@@ -42,7 +42,7 @@
 @include pour_tablet_seul {
   .coeur_color {
     position: absolute;
-    right: 62px;
+    right: 15%;
   }
 
   .coeur {
@@ -89,17 +89,14 @@
   }
 }
 @include pc_smal {
-
   .coeur_color {
     position: relative;
-    right: -11px;
-    top: -17px;
-}
-  
-  .coeur_color_a {
-    position: relative;
-       right: -11px;
-    top: -16px;
+    right: 29%;
   }
 
+  .coeur_color_a {
+    position: relative;
+    right: 16px;
+    top: 11px;
+  }
 }
