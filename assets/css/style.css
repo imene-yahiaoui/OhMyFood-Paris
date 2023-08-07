@@ -868,6 +868,7 @@ body {
   font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 300;
 }
 .btn_menu:hover .btn_menu_check {
   transition: all 1s ease;

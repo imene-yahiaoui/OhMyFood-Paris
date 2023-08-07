@@ -5,7 +5,7 @@
   position: relative;
   max-width: 100%;
   display: block;
-   object-fit: cover;
+  object-fit: cover;
   width: 100%;
 }
 
@@ -31,9 +31,6 @@
 }
 
 .btn_menu_check {
-
- 
-
   display: grid;
   place-items: center;
   color: $color-Tertiaire;
@@ -44,7 +41,6 @@
   padding: 0;
   border-radius: 0 14px 14px 0;
   transition: margin-right 0.7s;
-  
 }
 
 .fa .fa-solid,
@@ -60,7 +56,7 @@
   color: $color-Tertiaire;
   justify-items: center;
 }
-//l'animation de btn check 
+//l'animation de btn check
 @keyframes chekAnim {
   0% {
     transform: rotate(-270deg);
@@ -69,7 +65,7 @@
     transform: rotate(0);
   }
 }
-//animation de menu 
+//animation de menu
 @import "../utils/animation";
 
 .btn_menu {
@@ -87,17 +83,16 @@
   width: 100%;
   display: flex;
   transition: all 1s ease;
-  animation: effet .8s both;
- 
+  animation: effet 0.8s both;
 
   span {
     display: flex;
     align-items: flex-end;
     font-weight: 900;
     padding-bottom: 11px;
-   
+
     align-content: flex-end;
-   margin-left: auto;
+    margin-left: auto;
     margin-right: 20px;
   }
 
@@ -114,7 +109,7 @@
   p {
     width: 85%;
     padding: 16px;
-    padding-right:0px ;
+    padding-right: 0px;
     margin: 0px;
     white-space: nowrap;
     font-size: 15px;
@@ -131,6 +126,7 @@
     font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
+    font-weight: 300;
   }
 
   &:hover {
@@ -151,7 +147,7 @@
   row-gap: 20px;
   padding-bottom: 40px;
 }
- 
+
 .titre_choix_menu {
   width: 40px;
   color: $color-grisFoncer;
@@ -194,23 +190,21 @@
   }
 }
 
-@include portable_smal{
+@include portable_smal {
   .titre_menu h3 {
     font-size: 18px;
-}
+  }
 
-.btn_menu_check {
-
-  width: 80px;
-  margin-right: -80px;
-}
-.btn_menu   {
-P{
-  font-size: 13px;
-}
-b{
-  font-size: 16px;
-}
-
-}
+  .btn_menu_check {
+    width: 80px;
+    margin-right: -80px;
+  }
+  .btn_menu {
+    P {
+      font-size: 13px;
+    }
+    b {
+      font-size: 16px;
+    }
+  }
 }
