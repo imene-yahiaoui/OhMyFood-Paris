@@ -159,6 +159,7 @@ footer .footer_titre {
   line-height: 26px;
   margin-bottom: 17px;
   font-weight: 400;
+  font-style: italic;
 }
 footer a {
   color: #ffffff;
@@ -291,7 +292,6 @@ footer .info-footer {
 }
 .info p {
   margin-top: -9px;
-  font-weight: 900;
   font-size: 18px;
   text-align: center;
   margin-bottom: 33px;
@@ -1034,6 +1034,7 @@ footer .footer_titre {
   line-height: 26px;
   margin-bottom: 17px;
   font-weight: 400;
+  font-style: italic;
 }
 footer a {
   color: #ffffff;
